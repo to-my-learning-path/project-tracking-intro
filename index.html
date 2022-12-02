@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <title>Frontend Mentor | Project tracking intro component</title>
+  </head>
+  <body
+    class="text-[18px] md:text-xl lg:text-1xl font-barlowCondensed max-w-[1519px] mx-auto"
+  >
+    <header
+      class="flex justify-between pt-6 px-8 md:px-10 lg:pt-16 lg:px-32 relative"
+    >
+      <img src="./images/logo.svg" alt="" />
+      <button
+        class="md:hidden"
+        id="toggle-button"
+        aria-expanded="false"
+        aria-control="main-nav"
+      >
+        <img id="icon-hamburger" src="./images/icon-hamburger.svg" alt="" />
+        <img
+          id="icon-close"
+          class="hidden"
+          src="./images/icon-close.svg"
+          alt=""
+        />
+      </button>
+      <nav
+        class="hidden md:hidden absolute left-8 right-8 top-16 shadow-xl bg-white"
+        id="mobile-nav"
+      >
+        <ul class="uppercase text-center py-4 px-4 font-bold space-y-4">
+          <li><a class="hover:underline" href="#">Product</a></li>
+          <li><a class="hover:underline" href="#">Features</a></li>
+          <li><a class="hover:underline" href="#">Pricing</a></li>
+          <li><hr class="my-4 text-grayishBlue" /></li>
+          <li>
+            <a class="hover:underline text-grayishBlue" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="hidden md:block" id="main-nav">
+        <ul class="uppercase font-bold flex justify-between items-center gap-8">
+          <li><a class="hover:underline" href="#">Product</a></li>
+          <li><a class="hover:underline" href="#">Features</a></li>
+          <li><a class="hover:underline" href="#">Pricing</a></li>
+          <li><hr class="text-grayishBlue md:w-5" /></li>
+          <li>
+            <a class="hover:underline text-grayishBlue" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="px-8 lg:px-32 md:mt-16 md:px-10 lg:mt-24">
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+        <div class="space-y-4">
+          <p class="uppercase text-grayishBlue tracking-[0.3rem]">
+            <span
+              class="text-white bg-black rounded-2xl px-2 py-1 font-bold tracking-normal"
+              >New</span
+            >
+            Monograph Dashboard
+          </p>
+          <h1
+            class="text-4xl font-bold md:text-2xl lg:text-4xl xl:text-6xl uppercase"
+          >
+            Powerful insights into your team
+          </h1>
+          <p class="font-barlow">
+            Project planning and time tracking for agile teams
+          </p>
+          <div
+            class="flex justify-between lg:justify-start lg:space-x-4 items-center mt-2 md:pt-6"
+          >
+            <a
+              class="uppercase bg-red text-white rounded-lg px-5 py-2 inline-block hover:opacity-80"
+              href="#"
+              >Schedule a demo</a
+            >
+            <p class="uppercase text-grayishBlue">to see a live preview</p>
+          </div>
+        </div>
+        <img
+          class="-order-last md:order-1"
+          src="./images/illustration-devices.svg"
+          alt=""
+        />
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
